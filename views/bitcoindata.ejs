@@ -1,0 +1,25 @@
+<%- include('./partials/header') %>
+<div id="main-div">
+  <h1 id="btcn-h1">Bitcoins</h1>
+    <div class="styled-table"> 
+      <table>
+        <thead>
+          <tr>
+            <th>Coin</th>
+            <th>Current price</th>
+            <th>All time high</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% coinData.data.coins.forEach(function(c) { %>
+            <tr>
+              <td> <%= c.name %> </td>
+              <td> <%= c.price %> </td>
+              <td> <%= c.allTimeHigh.price %> </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>  
+    </div>
+</div>
+<%- include('./partials/footer') %>

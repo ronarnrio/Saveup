@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+<div id="main-div">
+    <form action="/goals/new" method="POST">
+        <h1 id="goal-h1">Savings goal</h1>
+        <br>
+        <label class="goal-lbl" for="name">Name: </label>
+        <input type="text" name="name" id="name" placeholder="Enter name of goal">
+        <br>
+        <label class="goal-lbl" for="description">Description: </label>
+        <input type="text" name="description" id="description" placeholder="Goal description">
+        <br>
+        <label class="goal-lbl" for="cost">Cost: </label>
+        <input type="text" name="cost" id="cost" placeholder="Goals cost">
+        <br>
+        <label class="goal-lbl" for="deposit">Deposit: </label>
+        <input type="text" name="deposit" id="deposit" placeholder="Deposit">
+        <br>
+        <input type="submit" value="Add">
+      </form>
+</div>
+<%- include('../partials/footer') %>

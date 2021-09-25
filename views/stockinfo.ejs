@@ -1,0 +1,31 @@
+<%- include('./partials/header') %>
+<div id="stock-div">
+    <h1 id="stk-h1">Stocks</h1>
+    <div class="styled-table2"> 
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Previous close</th>
+              <th>Open</th>
+              <th>Day high</th>
+              <th>Day low</th>
+              <th>Last price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% stockData.forEach(function(s) { %>
+              <tr>
+                <td> <%= s.symbol %> </td>
+                <td> <%= s.previousClose %> </td>
+                <td> <%= s.open %> </td>
+                <td> <%= s.dayHigh %> </td>
+                <td> <%= s.dayLow %> </td>
+                <td> <%= s.lastPrice %> </td>
+              </tr>
+            <% }) %>
+          </tbody>
+        </table>  
+      </div>
+  </div>
+<%- include('./partials/footer') %>

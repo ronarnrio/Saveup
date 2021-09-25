@@ -6,3 +6,7 @@ Full stack project (MEN) no React.
 <img src="https://i.ibb.co/3c7pk0Q/Screen-Shot-2021-09-25-at-10-01-07-AM.png"/>
 <img src="https://i.ibb.co/JnxfVCH/Screen-Shot-2021-09-25-at-10-01-24-AM.png"/>
 <img src="https://i.ibb.co/V9Zyh7t/Screen-Shot-2021-09-25-at-9-56-00-AM.png"/>
+# Technologies Used
+Html, CSS, JavaScript, Mongoose, Express, Node
+# Getting Started
+https://save4goals.herokuapp.com/
